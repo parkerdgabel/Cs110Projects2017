@@ -1,0 +1,23 @@
+# const for the width of the totem.
+SIZE = 3
+
+
+def leading_whitespaces(num):
+    return " " * num
+
+
+def dec(num):
+    num = int(num) - 1
+    return num
+
+
+def numbers():
+    s = [7, 8, 9, 9, 8, 7]
+
+    def numbers_closure():
+        nonlocal s
+        s = list(map(dec, s))
+        s = list(map(str, s))
+        s = "".join(s)
+        return s
+    return numbers_closure

@@ -1,0 +1,6 @@
+import totem
+
+
+def test_leading_whitespace():
+    assert totem.leading_whitespaces(1) == " "
+    assert totem.leading_whitespaces(2) == "  "
