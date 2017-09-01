@@ -2,17 +2,18 @@
 SIZE = 3
 
 
-def nose(char, spaces=" "):
-    print("|" + (spaces * (SIZE - 2)) + char +
-          " " + char + (spaces * (SIZE - 2)) + "|")
+def nose(left_char, right_char, spaces=" "):
+    """Generic function to print totem noses."""
+    print("|" + (spaces * (SIZE - 2)) + left_char +
+          " " + right_char + (spaces * (SIZE - 2)) + "|")
 
 
 def leading_whitespaces(num):
     return " " * num
 
 
-def slash_line():
-    return (("\\" * 4) + ("/" * 4))
+def slash_line(char):
+    return ((char * 4) + ("/" * 4))
 
 
 def eyes(edges, inner):
@@ -29,7 +30,7 @@ def arrow_line():
 
 def print_face_1():
     print(slash_line())
-    print(eyes_1())
+    print(eyes("|", ".)(."))
     print()
 
 
