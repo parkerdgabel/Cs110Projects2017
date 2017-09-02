@@ -7,8 +7,12 @@ def test_leading_whitespace():
 
 
 def test_slash_line():
-    assert totem.slash_line("\\") == "\\\\\\\\////"
-    assert totem.slash_line("/") == "////////"
+    assert totem.backslash_line() == "\\\\\\\\////"
+
+
+def test_hairline():
+    assert totem.hairline("|") == "||||||"
+    assert totem.hairline("/") == "//////"
 
 
 def test_eyes():
