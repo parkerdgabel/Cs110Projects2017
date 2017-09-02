@@ -99,60 +99,76 @@ def owl_wings_middle_part_right_2():
     return "\\ \\ \\ \\"
 
 def owl_middle_part_2(char):
+    """Returns the second part of the midle of the owl's body."""
     return owl_wings_middle_part_left_2() + owl_body_middle(char) + owl_wings_middle_part_right_2()
 
 def owl_wings_bottom_left():
+    """Returns the bottom left portion of the owl's wing."""
     return "'-'-'-'-"
 
 def owl_wings_bottom_right():
+    """Returns the bottom right portion of the owl's wing."""
     return "-'-'-'-'"
 
 def owl_wings_bottom(char):
+    """Returns the entire bottom portion to the owl's wings."""
     return owl_wings_bottom_left() + owl_body_middle(char) + owl_wings_bottom_right()
 
 def owl_tail():
+    """Returns the owl's tail."""
     return (SIZE * "(") + "^^" + (SIZE * ")")
 
 def owl_feet():
+    """Returns the second owl's feet."""
     return "T" + ((SIZE - 2) * " ") + ((SIZE - 2) * " ") + "T"
 
 def cat_ears():
+    """Returns the cat's ears."""
     return "/\\" + ((SIZE - 2) * "-") + ((SIZE - 2) * "-") + "/\\"
 
 def cat_eyes():
+    """Returns the cat's eyes."""
     return "(" + ((SIZE - 2) * " ") + ".  ." + ((SIZE - 2) * " ") + ")"
 
 def print_cat():
+    """Prints the cat."""
     print(leading_whitespaces(8) + cat_ears())
     print(leading_whitespaces(7) + cat_eyes())
     
-def mouth_1():
+def yelling_mouth():
+    """Prints the yelling mouth guy."""
     return "\\" + ((SIZE - 3) * " ") + "(__)" + ((SIZE - 3) * " ") + "/"
 
 def oh_mouth():
+    """Prints the mouth of the guy saying Oh."""
     return "(" + ((SIZE - 2) * " ") + "()" + ((SIZE - 2) * " ") + ")"
 
 def oh_guy_eyes():
+    """Prints the oh guys eyes."""
     return "(0)" + ((SIZE - 3) * " ") + ((SIZE - 3) * " ") + "(0)"
 
 def arrow_line():
+    """Prints the arrow lines."""
     return (">" * SIZE) + ("<" * SIZE)
 
 
-def print_face_1():
+def print_yelling_guy():
+    """Prints the guy who is yelling."""
     print(leading_whitespaces(7) + backslash_line())
     print(leading_whitespaces(8) + eyes("|", ".)(."))
     print(leading_whitespaces(8) + nose("|", "|"))
-    print(leading_whitespaces(8) + mouth_1())
+    print(leading_whitespaces(8) + yelling_mouth())
 
 
 def print_oh_guy():
+    """Prints the guy who is saying Oh."""
     print(leading_whitespaces(8) + hairline("\\"))
     print(leading_whitespaces(8) + oh_guy_eyes())
     print(leading_whitespaces(8) + nose("/", "\\"))
     print(leading_whitespaces(8)+ oh_mouth())
 
 def print_owl():
+    """Prints the first owl."""
     print(leading_whitespaces(8) + owl_hair())
     print(leading_whitespaces(8) + owl_eyes())
     print(owl_top_part_of_wings())
@@ -162,12 +178,14 @@ def print_owl():
     print(leading_whitespaces(7) + owl_tail())
 
 def print_forward_slash_hair_guy():
+    """Prints the guy with forward slashes for its hair."""
     print(leading_whitespaces(8) + hairline("/"))
     print(leading_whitespaces(8) + eyes("|", ".)(."))
     print(leading_whitespaces(8) + nose("|", "|"))
-    print(leading_whitespaces(8) + mouth_1())
+    print(leading_whitespaces(8) + yelling_mouth())
 
 def print_owl_with_folded_wings():
+    """Print the owl with folded wings."""
     print(leading_whitespaces(8) + owl_hair())
     print(leading_whitespaces(8) + owl_eyes())
     print(owl_top_part_of_wings_folded())
@@ -176,7 +194,7 @@ def print_owl_with_folded_wings():
     print(leading_whitespaces(9) + owl_feet())
 # def numbers():
    # for i in range():
-print_face_1()
+print_yelling_guy()
 print_oh_guy()
 print_owl()
 print_forward_slash_hair_guy()

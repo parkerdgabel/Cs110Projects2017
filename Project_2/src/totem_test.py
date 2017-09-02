@@ -13,13 +13,12 @@ def test_slash_line():
 def test_hairline():
     assert totem.hairline("|") == "||||||"
     assert totem.hairline("/") == "//////"
-
 def test_eyes():
     assert totem.eyes("|", ".)(.") == "|.)(.|"
 
 
-def test_mouth_1():
-    assert totem.mouth_1() == "\\(__)/"
+def test_yelling_mouth():
+    assert totem.yelling_mouth() == "\\(__)/"
 
 
 def test_arrow_line():
