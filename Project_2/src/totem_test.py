@@ -14,7 +14,6 @@ def test_hairline():
     assert totem.hairline("|") == "||||||"
     assert totem.hairline("/") == "//////"
 
-
 def test_eyes():
     assert totem.eyes("|", ".)(.") == "|.)(.|"
 
