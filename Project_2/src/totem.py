@@ -195,6 +195,18 @@ def numbers(leading_int):
     print()
 
 
+def pedestal_body(edges_left, center_char, edges_right):
+    return edges_left + ((SIZE - 2) * "_") + center_char + ((SIZE - 2) * "_") + edges_right
+
+
+def pedestal_base_top():
+    return "_" + pedestal_body("|", ",_", "|") + "_"
+
+
+def pedestal_base_bottom():
+    return "(_" + pedestal_body("_", "\\_", "_") + "_)"
+
+
 def print_yelling_guy():
     """Prints the guy who is yelling."""
     print(leading_whitespaces(7) + backslash_line())
@@ -263,6 +275,13 @@ def print_guy_with_spiked_hair():
     print(equals_mouth())
 
 
+def print_pedestal():
+    print(leading_whitespaces(8) + pedestal_body("|", "/\\", "|"))
+    print(leading_whitespaces(8) + pedestal_body("(", "/\\", ")"))
+    print(leading_whitespaces(7) + pedestal_base_top())
+    print(leading_whitespaces(6) + pedestal_base_bottom())
+
+
 def print_totem():
     print_yelling_guy()
     print_oh_guy()
@@ -271,6 +290,7 @@ def print_totem():
     print_cat()
     print_owl_with_folded_wings()
     print_guy_with_spiked_hair()
+    print_pedestal()
 
 
 def main():
