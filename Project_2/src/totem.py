@@ -38,7 +38,7 @@ def owl_hair():
 
 def owl_eyes():
     """Returns the owls eyes."""
-    return eyes("|", "0\\/0")
+    return eyes("|", "o\\/o")
 
 
 def left_wing_top():
@@ -171,6 +171,11 @@ def oh_guy_eyes():
     return "(0)" + ((SIZE - 3) * " ") + ((SIZE - 3) * " ") + "(0)"
 
 
+def last_guy_eyes():
+    """Prints the oh guys eyes."""
+    return "(o)" + ((SIZE - 3) * " ") + ((SIZE - 3) * " ") + "(o)"
+
+
 def equals_mouth():
     return leading_whitespaces(8) + "(" + ((SIZE - 1) * "=") + ((SIZE - 1) * "=") + ")"
 
@@ -270,7 +275,7 @@ def print_owl_with_folded_wings():
 def print_guy_with_spiked_hair():
     """Prints the last guys."""
     print(leading_whitespaces(8) + hairline("|"))
-    print(leading_whitespaces(8) + oh_guy_eyes())
+    print(leading_whitespaces(8) + last_guy_eyes())
     print(leading_whitespaces(8) + nose("/", "\\"))
     print(equals_mouth())
 
