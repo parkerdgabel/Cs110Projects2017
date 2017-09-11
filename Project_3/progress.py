@@ -1,5 +1,5 @@
 from drawingpanel import *
-
+from random import randint
 PANEL_WIDTH = 500
 PANEL_HEIGHT = 300
 
@@ -71,26 +71,49 @@ def pedals(panel, x, y):
     draw_inner_pedals(panel, x, y)
 
 
-def flower(panel, x):
-    draw_stalk(panel, x, PANEL_HEIGHT)
-    draw_leaves_left(panel, x, PANEL_HEIGHT - 10)
-    draw_stalk(panel, x, PANEL_HEIGHT - 10)
-    draw_leaves_right(panel, x, PANEL_HEIGHT - 20)
-    draw_stalk(panel, x, PANEL_HEIGHT - 20)
-    draw_leaves_left(panel, x, PANEL_HEIGHT - 30)
-    draw_stalk(panel, x, PANEL_HEIGHT - 30)
-    draw_stalk(panel, x, PANEL_HEIGHT - 40)
-    draw_outer_pedals(panel, x, PANEL_HEIGHT - 50)
-    draw_inner_pedals(panel, x, PANEL_HEIGHT - 50)
+def leaves(panel, x, y):
+    draw_stalk(panel, x, y)
+    draw_leaves_left(panel, x, y - 10)
+    draw_stalk(panel, x, y - 10)
+    draw_leaves_right(panel, x, y - 20)
+
+
+def flower_complete(panel, x, y):
+    for i in range(5):
+        leaves(panel, x, y)
+        y = y - 20
+    draw_stalk(panel, x, y)
+    y = y - 10
+    draw_stalk(panel, x, y)
+    y = y - 10
+    draw_stalk(panel, x, y)
+    pedals(panel, x, y)
+
+
+def flower(panel, steps):
+    x = randint(50, PANEL_WIDTH - 50)
+    y = PANEL_HEIGHT
+    for i in range(steps // 5000):
+        flower_complete(panel, x, y)
+        x = randint(50, PANEL_WIDTH - 50)
+    for i in range((steps % 5000) // 1000):
+        leaves(panel, x, y)
+        y = y - 20
+    draw_stalk(panel, x, y)
+    y = y - 10
+    draw_stalk(panel, x, y)
+    y = y - 10
+    draw_stalk(panel, x, y)
+    pedals(panel, x, y)
 
 
 def main():
-   # steps = int(input("How many steps have you walked? "))
+    steps = int(input("How many steps have you walked? "))
     panel = DrawingPanel(PANEL_WIDTH, PANEL_HEIGHT, "CadetBlue")
     oval(panel)
     rectangle(panel)
     triangle(panel)
-    flower(panel, 250)
+    flower(panel, steps)
 
 
 main()
