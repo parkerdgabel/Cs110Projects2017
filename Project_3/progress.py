@@ -53,6 +53,11 @@ def draw_inner_pedals(panel, x, y):
     panel.fill_oval(x - 3, y - 29, 10, 10, "yellow3")
 
 
+def pedals(panel, x, y):
+    draw_outer_pedals(panel, x, y)
+    draw_inner_pedals(panel, x, y)
+
+
 def flower(panel, x):
     draw_stalk(panel, x, PANEL_HEIGHT)
     draw_leaves_left(panel, x, PANEL_HEIGHT - 10)
@@ -64,6 +69,8 @@ def flower(panel, x):
     draw_stalk(panel, x, PANEL_HEIGHT - 40)
     draw_outer_pedals(panel, x, PANEL_HEIGHT - 50)
     draw_inner_pedals(panel, x, PANEL_HEIGHT - 50)
+
+
 def main():
    # steps = int(input("How many steps have you walked? "))
     panel = DrawingPanel(PANEL_WIDTH, PANEL_HEIGHT, "CadetBlue")
