@@ -4,14 +4,14 @@ PANEL_WIDTH = 500
 PANEL_HEIGHT = 300
 
 
-def oval(panel):
+def oval(panel, x, y, h, w, color): 
     """Backgroud oval."""
-    panel.fill_oval(50, 60, 20, 30, "magenta")
+    panel.fill_oval(x, y, h, w, color)
 
 
-def rectangle(panel):
+def rectangle(panel, x, y, h, w, color):
     """Backgroud Rectangle."""
-    panel.fill_rect(100, 150, 70, 100, "purple2")
+    panel.fill_rect(x, y, h, w, color)
 
 
 def triangle(panel):
@@ -91,6 +91,7 @@ def flower_complete(panel, x, y):
 
 
 def flower(panel, steps):
+    """Function to produce all the necessary flowers."""
     x = randint(50, PANEL_WIDTH - 50)
     y = PANEL_HEIGHT
     for i in range(steps // 5000):
@@ -110,9 +111,11 @@ def flower(panel, steps):
 def main():
     steps = int(input("How many steps have you walked? "))
     panel = DrawingPanel(PANEL_WIDTH, PANEL_HEIGHT, "CadetBlue")
-    oval(panel)
-    rectangle(panel)
+    oval(panel, 50, 60, 70, 50, "magenta")
+    rectangle(panel, 100, 150, 70, 90, "purple2")
     triangle(panel)
+    oval(panel, 150, 160, 50, 70, "yellow2")
+    rectangle(panel, 330, 170, 90, 30, "orange3")
     flower(panel, steps)
 
 
