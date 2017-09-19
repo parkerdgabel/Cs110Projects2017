@@ -16,6 +16,9 @@ def main():
     upper_left(panel)
     mid_left(panel)
     lower_left(panel)
+    lower_middle(panel)
+    lower_right(panel)
+    upper_right(panel)
 
 
 def upper_left(panel):
@@ -30,6 +33,21 @@ def mid_left(panel):
 
 def lower_left(panel):
     x, y, size, pairs, offset, cols = 10, 150, 25, 4, 0, 4
+    draw_columns(x, y, size, pairs, offset, cols, panel)
+
+
+def lower_middle(panel):
+    x, y, size, pairs, offset, cols = 250, 200, 25, 3, 10, 3
+    draw_columns(x, y, size, pairs, offset, cols, panel)
+
+
+def lower_right(panel):
+    x, y, size, pairs, offset, cols = 425, 180, 20, 5, 10, 5
+    draw_columns(x, y, size, pairs, offset, cols, panel)
+
+
+def upper_right(panel):
+    x, y, size, pairs, offset, cols = 400, 20, 35, 2, 35, 2
     draw_columns(x, y, size, pairs, offset, cols, panel)
 
 
@@ -98,9 +116,10 @@ def draw_columns(x, y, size, pairs, offset, cols, panel):
                     cols           int: sets the number of columns
                     panel DrawingPanel: the panel."""
     for i in range(cols):
-        draw_two_rows(x, y + (i * (2 * size)),
+        y_pos = y + (i * (size * 2))
+        draw_two_rows(x, y_pos,
                       size, pairs, offset, panel)
-        y += MORTAR
+        y += MORTAR * 2
 
 
 main()
