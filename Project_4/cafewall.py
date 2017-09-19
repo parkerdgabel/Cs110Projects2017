@@ -22,31 +22,37 @@ def main():
 
 
 def upper_left(panel):
+    """Prints the upper left effect."""
     x, y, pairs, size = 0, 0, 4, 20
     draw_row(x, y, size, pairs, panel)
 
 
 def mid_left(panel):
+    """Prints the mid left panel."""
     x, y, size, pairs = 50, 70, 30, 5
     draw_row(x, y, size, pairs, panel)
 
 
 def lower_left(panel):
+    """Prints the lower left effect."""
     x, y, size, pairs, offset, cols = 10, 150, 25, 4, 0, 4
     draw_columns(x, y, size, pairs, offset, cols, panel)
 
 
 def lower_middle(panel):
+    """Prints the lower middle effect."""
     x, y, size, pairs, offset, cols = 250, 200, 25, 3, 10, 3
     draw_columns(x, y, size, pairs, offset, cols, panel)
 
 
 def lower_right(panel):
+    """Prints the lower right effect."""
     x, y, size, pairs, offset, cols = 425, 180, 20, 5, 10, 5
     draw_columns(x, y, size, pairs, offset, cols, panel)
 
 
 def upper_right(panel):
+    """Prints the upper right effect."""
     x, y, size, pairs, offset, cols = 400, 20, 35, 2, 35, 2
     draw_columns(x, y, size, pairs, offset, cols, panel)
 
