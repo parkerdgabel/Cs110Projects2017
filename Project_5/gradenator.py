@@ -19,6 +19,7 @@ def introduction():
     """introduction simply prints the intro."""
     print("This program reads exam/homework scores")
     print("and reports your overall course grade.")
+    print()
 
 
 def query_test_scores(num):
@@ -37,6 +38,7 @@ def query_test_scores(num):
     print("Total points = ", score, " / ", 100)
     score = round((score / 100) * weight, 1)
     print("Weighted score = ", score, " / ", weight)
+    print()
     return score
 
 
@@ -77,6 +79,7 @@ def homework():
     score = round((score / total) * weight, 1)
     score = round(min(score, total), 1)
     print("Weighted score = ", score, " / ", weight)
+    print()
     return score
 
 
@@ -90,6 +93,7 @@ def quizzes():
     score = round((score / total) * weight, 1)
     score = min(score, total)
     print("Weighted score = ", score, " / ", weight)
+    print()
     return score
 
 
@@ -103,6 +107,7 @@ def daily_homework():
     print("Total points = ", score, " / ", total)
     score = round(min((score / total) * weight, total), 1)
     print("Weighted score = ", score, " / ", weight)
+    print()
     return score
 
 

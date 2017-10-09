@@ -1,6 +1,5 @@
-def factor_count(num):
-    count = 0
-    for i in range(1, num):
-        if num % i == 0:
-            count += 1
-    return count
+def show_twos(num):
+    counter = 0
+    while num % 2 == 0:
+        num /= 2
+        counter += 1
