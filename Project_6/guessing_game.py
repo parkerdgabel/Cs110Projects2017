@@ -11,7 +11,10 @@ def main():
 
 
 def haiku():
-    pass
+    print("Learning is living.")
+    print("We are empty like the sky.")
+    print("Why then do you cry?")
+    print()
 
 
 def guessing_game():
@@ -21,7 +24,6 @@ def guessing_game():
     counter = 0
     while userNum != num:
         counter += 1
-        print("[Hint its ", num, "]")
         userNum = int(input("Your guess? "))
         if userNum == num:
             print("You got it right in ", counter, " guesses!")
@@ -59,6 +61,7 @@ def play():
             done = False
         else:
             done = True
+    print()
     statistics(totalGuess, games, best)
 
 
