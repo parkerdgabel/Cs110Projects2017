@@ -1,0 +1,41 @@
+Region Name: cure for cancer protein
+Nucleotides: ATGCCACTATGGTAG
+Nuc. Counts: [4, 3, 4, 4]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 1978.7609999999995
+Codons List: ['ATG', 'CAC', 'ATG']Region Name: captain picard hair growth protein
+Nucleotides: ATgCCAACATGgATGCCcGATAtGGATTgA
+Nuc. Counts: [9, 5, 5, 6]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 3967.5430000000006
+Codons List: ['ATG', 'CAA', 'ATG', 'ATG', 'CCG', 'TAT', 'GAT']Region Name: bogus protein
+Nucleotides: CCATt-AATgATCa-CAGTt
+Nuc. Counts: [5, 4, 1, 4]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 2508.078
+Codons List: ['CCA', 'TAA', 'GAT', 'ACA']Region Name: michael jordan mad hops protein
+Nucleotides: ATgAG-ATC-CgtgatGTGgg-aT-CCTa-CT-CATTaa
+Nuc. Counts: [4, 6, 3, 8]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 4942.864
+Codons List: ['ATG', 'GAT', 'CGT', 'ATG', 'GGG', 'ATC', 'TAC', 'CAT']Region Name: paris hilton phony protein
+Nucleotides: AtgC-CaacaTGGATGCCCTAAG-ATAtgGATTagtgA
+Nuc. Counts: [8, 5, 5, 6]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 4974.269
+Codons List: ['ATG', 'CAA', 'ATG', 'ATG', 'CCT', 'AGA', 'ATG', 'ATT', 'GTG']Region Name: jimi hendrix guitar talent protein
+Nucleotides: atgataattagttttaatatcaga-ctgtaa
+Nuc. Counts: [0, 0, 0, 0]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 4049.538000000001
+Codons List: ['ATG', 'TAA', 'TAG', 'TTT', 'ATA', 'CAG', 'CTG']Region Name: admiral grace murray hopper protein
+Nucleotides: ATGC-AATT--GC-----TCGA--------TTAG
+Nuc. Counts: [5, 3, 4, 6]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 3964.1030000000005
+Codons List: ['ATG', 'AAT', 'GCT', 'GAT']Region Name: tyler durden's brain protein
+Nucleotides: ATGATAcctatgagtaaTGTGGACCatatccaaACTATAGGCATtgtcggACCAACGATcgattggtTATACTGA
+Nuc. Counts: [15, 8, 8, 11]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 9843.809
+Codons List: ['ATG', 'TAC', 'TAT', 'AGT', 'ATG', 'GGA', 'CAT', 'TCC', 'AAC', 'ATA', 'GCA', 'TGT', 'GGA', 'CAA', 'GAT', 'GAT', 'GGT', 'ATA']Region Name: mini me growth hormone
+Nucleotides: AtGgGaCGCTgA
+Nuc. Counts: [2, 2, 3, 1]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 1633.4439999999997
+Codons List: ['ATG', 'GAC', 'CTG']Region Name: Nyan Cat protein
+Nucleotides: CAT-CAT-CAT-CAT-CAT-CAT-CAT-CAT-CAT-CAT
+Nuc. Counts: [10, 10, 0, 10]
+Total Mass%: [0.0, 0.0, 0.0, 0.0]of 4613.380000000001
+Codons List: ['CAT', 'CAT', 'CAT', 'CAT', 'CAT', 'CAT', 'CAT', 'CAT', 'CAT']
